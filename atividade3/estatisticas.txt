@@ -1,0 +1,4 @@
+Numero total de palavras: 18
+Numero total de linhas: 5
+Numero medio de palavras por linha: 3.6
+Palavras mais frequentes: sd sdfhg 
