@@ -1,8 +1,6 @@
-// substitua a alocação dinâmica manual pela utilização de std::vector e compare o desempenho das duas abordagens.
-
-
 #include <iostream>   // Inclui a biblioteca padrão de entrada e saída, usada para operações como std::cout.
 #include <chrono>     // Inclui a biblioteca para medição de tempo, usada para medir a performance do código.
+#include <vector>
 using namespace std;
 using namespace std::chrono;
 
@@ -20,7 +18,7 @@ int main() {
     // Por exemplo, você pode preencher a matriz com valores e calcular a soma total.
     auto inicio = high_resolution_clock::now();
     for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) { matriz[i][j] = i * j; }
+        for (int j = 0; j < N; j++) { matriz[i][j] = i + j; }
     }
     long long soma = 0;
     for (int i = 0; i < N; i++) {
@@ -28,8 +26,8 @@ int main() {
     }
     auto fim = high_resolution_clock::now();
     auto duracao = duration_cast<milliseconds>(fim - inicio).count();
-    cout << "Tempo: " << duracao << "ms" << endl;
     cout << "Soma: " << soma << endl;
+    cout << "Tempo: " << duracao << "ms" << endl;
 
     // Liberação da memória alocada dinamicamente.
     // Primeiro, libera a memória alocada para cada linha (os arrays de inteiros).
@@ -39,7 +37,7 @@ int main() {
     delete[] matriz;
 
     // Alocação dinâmica de memória para uma matriz N x N usando std::vector.
-    vector< vector<int> > matriz_vector(N, vector<int>(N));
+    vector<vector<int>> matriz_vector(N, vector<int>(N));
 
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) { matriz_vector[i][j] = i + j; }
