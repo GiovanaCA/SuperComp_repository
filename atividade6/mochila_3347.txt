@@ -1,0 +1,14 @@
+max. peso: 95
+0: peso-58 valor-95
+1: peso-90 valor-32
+2: peso-36 valor-37
+3: peso-53 valor-54
+4: peso-8 valor-9
+5: peso-98 valor-29
+6: peso-31 valor-43
+7: peso-37 valor-59
+8: peso-36 valor-3
+9: peso-6 valor-98
+Tempo: 3.6079e-05 s
+Valor máximo: 236
+Itens: 0 6 9 

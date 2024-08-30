@@ -1,0 +1,9 @@
+max. peso: 10
+0: peso-1 valor-5
+1: peso-1 valor-10
+2: peso-2 valor-5
+3: peso-1 valor-20
+4: peso-8 valor-25
+Tempo: 3.2079e-05 s
+Valor máximo: 55
+Itens: 1 3 4 
