@@ -1,0 +1,5 @@
+max. peso: 600
+Heurística 1 - Tempo: 1.7296e-05 s, Valor: 487, Peso: 590
+Itens: 21 25 22 14 10 5 8 13 27 24 9 19 3 29 23 16 28 26 
+Heurística 2 - Tempo: 1.5572e-05 s, Valor: 339, Peso: 383
+Itens: 0 2 8 9 10 13 16 17 22 23 25 26 28 29 
