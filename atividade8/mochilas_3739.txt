@@ -1,0 +1,5 @@
+max. peso: 600
+Substituicao - Tempo: 5.9018e-05 s, Valor: 602, Peso: 580
+Itens: 17 28 9 10 16 21 24 13 14 7 3 6 15 4 1 22 27 
+Hill Climbing - Tempo: 3.3671e-05 s, Valor: 451, Peso: 596
+Itens: 1 2 4 6 8 9 10 13 14 15 18 19 22 24 26 27 
