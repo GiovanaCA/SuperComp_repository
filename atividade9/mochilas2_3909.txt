@@ -1,0 +1,5 @@
+max. peso: 90
+Mais caro - Tempo: 2.693e-06 s, Valor: 121, Peso: 89
+Itens: 0 2 4 7 
+Mais leve - Tempo: 1.903e-06 s, Valor: 170, Peso: 76
+Itens: 7 4 1 6 8 5 9 0 
