@@ -1,0 +1,13 @@
+Para refletir sobre o pi_recursivo:
+
+    Existem dependências que dificultam a paralelização?
+
+- O principal obstáculo para paralelizar esse código está na variável global sum. A função pi_r modifica essa variável, e isso pode criar uma condição de corrida, que é quando múltiplas threads acessam e modificam a mesma variável compartilhada sem a devida sincronização, levando a resultados imprevisíveis.
+
+    Quantas chamadas recursivas são feitas?
+
+- São feitas 8 chamadas recursivas.
+
+    Onde é possível inserir paralelismo no código?
+
+- É possível inserir paralelismo no nível de recursão, criando tarefas paralelas para cada chamada recursiva, e no nível de loop, eliminando a recursão e usando o paralelismo diretamente no laço.
