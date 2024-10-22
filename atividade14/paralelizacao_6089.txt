@@ -1,0 +1,2 @@
+Estimativa de Pi = 3.13816
+Tempo de execução = 0.0190663 segundos
