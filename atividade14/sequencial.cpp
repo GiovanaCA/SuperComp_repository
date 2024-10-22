@@ -11,7 +11,7 @@ int main() {
     int sum = 0;
     double x, y;
 
-    mt19937 generator(time(0)); 
+    mt19937 generator(chrono::system_clock::now().time_since_epoch().count()); 
     uniform_real_distribution<double> distribution(0.0, 1.0);
 
     auto inicio = high_resolution_clock::now();
