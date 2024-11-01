@@ -1,0 +1,4 @@
+Processo 0 recebeu iteracoes = 20
+Processo 1 recebeu iteracoes = 20
+Processo 2 recebeu iteracoes = 20
+Processo 3 recebeu iteracoes = 20

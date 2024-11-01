@@ -1,0 +1,2 @@
+Média global: 9.24
+Desvio padrão global: 5.50476
