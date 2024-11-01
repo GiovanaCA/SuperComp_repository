@@ -1,0 +1,6 @@
+Processo 1 recebeu: Aqui é o processo 0 falando com o processo 1
+Processo 2 recebeu: Aqui é o processo 1 falando com o processo 2
+Processo 3 recebeu: Aqui é o processo 2 falando com o processo 3
+Processo 4 recebeu: Aqui é o processo 3 falando com o processo 4
+Processo 5 recebeu: Aqui é o processo 4 falando com o processo 5
+Processo 0 recebeu: Aqui é o processo 5 falando com o processo 0

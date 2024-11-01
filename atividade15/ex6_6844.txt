@@ -1,0 +1,10 @@
+Processo 1: Aqui é a msg do processo 0 para o processo 1
+Processo 0: Aqui é a msg do processo 1 para o processo 0
+Processo 2: Aqui é a msg do processo 0 para o processo 2
+Processo 0: Aqui é a msg do processo 2 para o processo 0
+Processo 3: Aqui é a msg do processo 0 para o processo 3
+Processo 0: Aqui é a msg do processo 3 para o processo 0
+Processo 4: Aqui é a msg do processo 0 para o processo 4
+Processo 0: Aqui é a msg do processo 4 para o processo 0
+Processo 5: Aqui é a msg do processo 0 para o processo 5
+Processo 0: Aqui é a msg do processo 5 para o processo 0
