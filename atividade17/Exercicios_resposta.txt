@@ -1,0 +1,30 @@
+Exercício 1: Cálculo do Quadrado de cada Elemento da Matriz
+
+Objetivo: Compreender os efeitos da paralelização com MPI e OpenMP.
+
+
+1. Volte ao exercício do slide e execute com tamanhos diferentes da matriz (cada vez maiores) e observe o tempo necessário para rodar:
+a. Mantendo a paralelização local com OpenMP;
+b. Removendo a paralelização local com OpenMP;
+
+RESPOSTA:
+
+                Mantendo          |       Removendo
+    N = 10:  2.4162e-05 segundos  |  2.3466e-05 segundos
+    N = 50:  3.809e-05 segundos   |  3.6096e-05 segundos
+    N = 100: 7.4927e-05 segundos  |  6.5397e-05 segundos
+    N = 500: 0.000342351 segundos |  0.000356126 segundos
+
+Rodando o código e observando o tempo necessário, conclui-se que não há muita diferença, e para analisar com mais detalhe os tempos, visualizar os arquivos ex1_....txt
+
+
+
+Exercício 2: Cálculo do Quadrado de cada Elemento da Matriz
+
+Objetivo: Compreender os efeitos colaterais da paralelização com MPI.
+
+1. Volte ao exercício do slide e execute com diferentes quantidades de máquinas. Observe a divisão dos dados do MPI_Scatter. Como você protegeria o código contra efeitos colaterais de separações “estranhas” dos dados?
+
+RESPOSTA:
+
+Algumas alterações no código que o protegeriam seria calcular tamanhos dinâmicos pra cada processo, em vez de uma divisão igual em todas as partes, ou adicionar condicionais pra verificar o limite, evitando acessos indevidos no local_data.
