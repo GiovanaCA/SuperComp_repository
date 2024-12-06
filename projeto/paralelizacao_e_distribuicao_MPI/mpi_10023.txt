@@ -1,0 +1,2 @@
+Clique máxima arquivo saída: 3 8 19 23 28 31 32 33 40 43 50 
+Tempo de execução: 0.0704077 segundos

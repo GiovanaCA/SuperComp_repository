@@ -3,8 +3,10 @@
 #include <fstream>
 #include <algorithm>
 #include <functional>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 vector<vector<int> > LerGrafo(const string& nomeArquivo, int& numVertices) {
     ifstream arquivo(nomeArquivo);
@@ -49,12 +51,16 @@ void EncontrarCliqueMaxima(const vector<vector<int> >& grafo, int numVertices, v
 }
 
 int main() {
-    int numVertices = 135;
+    int numVertices = 0;
     vector<vector<int> > grafo = LerGrafo("grafo.txt", numVertices);
     vector<int> cliqueMaxima;
+    auto inicio = high_resolution_clock::now();
     EncontrarCliqueMaxima(grafo, numVertices, cliqueMaxima);
+    auto fim = high_resolution_clock::now();
+    duration<double> duracao = fim - inicio;
     cout << "Clique máxima arquivo saída: ";
     for(int i = 0; i < cliqueMaxima.size(); i++){ cout << cliqueMaxima[i] + 1 << " "; }
     cout << endl;
+    cout << "Tempo de execução: " << duracao.count() << " segundos" << endl;
     return 0;
 }
